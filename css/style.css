@@ -41,8 +41,8 @@ body{
     opacity: 0;
 
     animation-name: header-name-reveal;
-    animation-duration: 3s;
-    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -139,11 +139,46 @@ body{
     border-style:solid ;
 }
 
+.switch-button-class {
+
+    position: fixed;
+    bottom: 10px;
+    left: 4px;
+
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: white 2px solid;
+}
+
+.color-button-dark {
+    position: fixed;
+    bottom: 10px;
+    left: 4px;
+
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    background-color:lightgray;
+    color: rgb(#333);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: white 2px solid;
+}
+
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(200px, auto);
     grid-gap: 1em;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border: 20px;
 }
 
 .wrapper >div:nth-child(odd){
