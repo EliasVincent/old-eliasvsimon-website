@@ -6,6 +6,8 @@ body{
     line-height: 1.6;
     margin:0;
 
+    transition:all 0.5s ease-out;
+
 }
 
 .light-theme {
@@ -39,7 +41,7 @@ body{
     /* the 25% will let it stay at dark grey for a little longer  */
     0% {background-color: #333;}
     25% {background-color: #333;}
-    100% {background-color: rgb(0, 134, 223);}
+    100% {background-color: rgb(0, 118, 197);}
 }
 
 #main-header h1{
@@ -77,6 +79,13 @@ body{
     color:white;
     opacity: 85%;
 
+    transition: 0.3s ease-in-out;
+
+}
+
+#navbar:hover {
+    color: rgb(0, 134, 223);
+    box-shadow: 0 15px 15px rgba(0, 134, 223, .4);
 }
 
 
@@ -98,8 +107,17 @@ body{
     text-align: center;
     font-size: 18px;
     padding-right: 15px;
+
+    transition: 0.8s;
 }
 
+#navbar a:hover{
+    color:rgba(149, 213, 255, 0.4);
+}
+
+a:hover{
+    text-shadow: 0 0px 65px rgba(228, 228, 228, 0.4);
+}
 
 
 #showcase{
@@ -168,15 +186,24 @@ body{
     /* cursor pointer makes mouse when hovering over it showing the "click me" cursor */
     cursor: pointer;
 
+    transition: 0.4s ease-in-out;
+
+}
+
+#switch-button:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0px 25px rgba(0, 134, 223, .4);
+    background-color: rgb(30, 30, 51);
+
 }
 
 
 .wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-auto-rows: minmax(200px, auto);
     grid-gap: 2em;
-    width: 75%;
+    width: 50%;
     margin: auto;
     overflow: hidden;
     border: 20px;

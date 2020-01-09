@@ -45,5 +45,10 @@ function SwitchFunction() {
 
 // everything in one!!!
 document.getElementById('switch-button').addEventListener('click', function () {
-  document.body.classList.toggle('light-theme');
+  let darkThemeEnabled = document.body.classList.toggle('light-theme');
+  localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
 });
+
+if (localStorage.getItem('dark-theme-enabled')) {
+  document.body.classList.remove('light-theme');
+}
