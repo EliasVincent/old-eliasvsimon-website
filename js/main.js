@@ -32,7 +32,8 @@ function stickynavbar() {
       }
 }
 
-// dark theme switch button
+// bad dark theme switch button
+/* DOESNT WORK, You need to find why exactly it doesn't work tho, else this will stay here commented
 
 themeSwitcher = document.getElementById("color-button")
 let switcher = document.getElementById("switch-button")
@@ -40,4 +41,9 @@ let switcher = document.getElementById("switch-button")
 function SwitchFunction() {
   alert("it kinda works???")
 }
+*/
 
+// everything in one!!!
+document.getElementById('switch-button').addEventListener('click', function () {
+  document.body.classList.toggle('light-theme');
+});

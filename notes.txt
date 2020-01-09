@@ -1,2 +1,4 @@
 1. Completely redo Dark Theme switcher or scrap it
-Instead you could do other floating elements or switch to dark just when loading the page
+Instead I could do other floating elements or switch to dark just when loading the page
+
+2. Make nav links glow on hover

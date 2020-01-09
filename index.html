@@ -5,7 +5,8 @@
         <title>Elias Site!</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         </head>
-<body>
+<body class='light-theme'>
+ 
     <header id="main-header">
         <div class="container">
             <h1 id="titel">catto websito</h1>
@@ -14,13 +15,15 @@
 
     <nav id="navbar">
         <div class="container">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="downloads.html">Downloads</a></li>
-                <li><a href="https://google.com" target="_blank">JS Game?</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div id="navbar-list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="https://google.com" target="_blank">JS Game?</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -39,9 +42,9 @@
     </div>
 
     <br>
-
-    <input id="switch-button" class="switch-button-class" type="button" value="Switch to Dark Theme" onclick="SwitchFunction();" />
-
+    
+        <button id='switch-button'>Switch to Dark Theme</button>
+    </div>
     <br>
 
     <div class="wrapper">
