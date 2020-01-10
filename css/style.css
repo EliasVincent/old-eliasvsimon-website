@@ -25,6 +25,7 @@ body{
 
 
 #main-header{
+    display: none;
     background-color: #333;
     color:#ffff;
     text-align: center;
@@ -119,6 +120,37 @@ a:hover{
     text-shadow: 0 0px 65px rgba(228, 228, 228, 0.4);
 }
 
+#logo {
+    font-size: 24px;
+    padding-top: 10px;
+    text-align: center;
+
+    animation-name:logo-reveal;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo-reveal {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#navbar-hr {
+    height: 1px;
+    width: 60%;
+    background: lightgray;
+
+    animation-name: navbar-hr-fade-in;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes navbar-hr-fade-in {
+    0% {}
+    50% {opacity: 0.75;background:rgb(80, 185, 255) }
+    100% {}
+}
+
 
 #showcase{
     background-image:url(../images/showcase.png);
@@ -149,12 +181,14 @@ a:hover{
 }
 
 #main{
+    font-size: 24px;
     text-align: center;
     border-radius: 10px;
     border: rgb(33, 111, 255);
 }
 
 #main p{
+    font-size: 16px;
     text-align: left;
     border-radius: 15px;
 
@@ -209,17 +243,22 @@ a:hover{
     border: 20px;
 }
 
+
+/* redundant since every box will have it's own image soon
 .wrapper >div:nth-child(odd){
     background: rgb(57, 192, 255);
     /* every ungerade zahl (odd) of div has this different color */
-}
 
+/*
 .wrapper >div:nth-child(even){
     background: rgb(92, 103, 255);
     /* every ungerade zahl (odd) of div has this different color */
-}
+
+
 
 .box1{
+    background-image: url(/images/box-1.png);
+    background-repeat: no-repeat;
     text-align: center;
     padding: 6em;
 }

@@ -1,3 +1,0 @@
-1. Completely redo Dark Theme switcher or scrap it - DONE
-
-2. Make nav links glow on hover
