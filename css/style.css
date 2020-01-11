@@ -211,9 +211,23 @@ a:hover{
 
 #downloads-main {
     text-align: center;
-    border-radius: 10px;
-    border: rgb(143, 182, 255);
-    border-style:solid ;
+    height: 80%;
+    margin: auto;
+
+    background-image: repeating-linear-gradient(
+        -90deg,
+        rgb(209, 208, 255),
+        rgb(88, 88, 88),
+        rgb(20, 20, 20)
+    );
+    background-size: 200%;
+    background-repeat: no-repeat;
+    animation: Diagonal alternate 5s infinite;
+    list-style: none;
+}
+
+#downloads-list {
+    list-style: none;
 }
 
 #switch-button {
@@ -249,9 +263,9 @@ a:hover{
 
 .wrapper{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(50%, auto);
-    grid-gap: 4em;
+   
+    grid-auto-rows:(50%, auto);
+    grid-gap: 2em;
     width: 80%;
     margin: auto;
     overflow: hidden;
