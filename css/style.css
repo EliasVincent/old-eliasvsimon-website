@@ -76,6 +76,9 @@ body{
   }
 
 #navbar{
+    /* remove position and width to get back full showcase */
+    position: fixed;
+    width: 100%;
     background-image:url(../images/navbar.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -259,19 +262,55 @@ a:hover{
 
 
 .box1{
-    background-image: url(/images/box-1.png);
+    background-image: repeating-linear-gradient(
+        -90deg,
+        rgb(1, 0, 66),
+        rgb(4, 40, 95) 0%,
+        rgb(36, 36, 36)
+    );
+    background-size: 200%;
     background-repeat: no-repeat;
     text-align: center;
     padding: 6em;
+    
+    animation: Diagonal alternate 10s infinite;
+    font-style: oblique;
+    font-family: consolas;
+}
+
+@keyframes Diagonal {
+    0% {background-position: 0% 50%}
+    100% {background-position: 100% 50%}
 }
 
 a:link{
     text-decoration: none;
+    color:white;
+}
+
+a:visited{
+    text-decoration: none;
+    color:white;
 }
 
 .box2{
     text-align: center;
     padding: 6em;
+
+    background-image: repeating-linear-gradient(
+        -90deg,
+        rgb(0, 56, 66),
+        rgb(3, 62, 117) 0%,
+        rgb(36, 36, 36)
+    );
+    background-size: 200%;
+    background-repeat: no-repeat;
+    
+    animation: Diagonal alternate 10s infinite;
+    animation-delay: 4s;
+    font-style: oblique;
+    font-family: consolas;
+
 }
 
 .box3{

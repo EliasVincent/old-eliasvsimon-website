@@ -1,4 +1,3 @@
-// most of this is totally not stolen from w3 i swear
 console.log("js is working!")
 
 // sticky header currently not working for navbar but floating navbar might be a better choice anyway, I will just leave this here for future reference
