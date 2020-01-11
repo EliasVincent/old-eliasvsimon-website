@@ -77,8 +77,9 @@ body{
 
 #navbar{
     /* remove position and width to get back full showcase */
-    position: fixed;
-    width: 100%;
+
+    /* position: fixed;
+    width: 100%; */
     background-image:url(../images/navbar.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,7 +100,15 @@ body{
     padding:0;
     list-style:none;
     text-align: center;
-    
+
+    animation-name: navbar-links-fade-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navbar-links-fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 #navbar li{
@@ -133,6 +142,7 @@ a:hover{
     animation-name:logo-reveal;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 
 @keyframes logo-reveal {
@@ -240,12 +250,11 @@ a:hover{
 .wrapper{
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(200px, auto);
-    grid-gap: 2em;
-    width: 50%;
+    grid-auto-rows: minmax(50%, auto);
+    grid-gap: 4em;
+    width: 80%;
     margin: auto;
     overflow: hidden;
-    border: 20px;
 }
 
 
@@ -259,23 +268,24 @@ a:hover{
     background: rgb(92, 103, 255);
     /* every ungerade zahl (odd) of div has this different color */
 
-
+.box{
+    color: white;
+    text-align: center;
+    padding: 6em;
+    font-style: oblique;
+    font-family: consolas;
+}
 
 .box1{
     background-image: repeating-linear-gradient(
         -90deg,
-        rgb(1, 0, 66),
-        rgb(4, 40, 95) 0%,
-        rgb(36, 36, 36)
+        rgb(2, 0, 139),
+        rgb(16, 50, 100),
+        rgb(20, 20, 20)
     );
     background-size: 200%;
     background-repeat: no-repeat;
-    text-align: center;
-    padding: 6em;
-    
     animation: Diagonal alternate 10s infinite;
-    font-style: oblique;
-    font-family: consolas;
 }
 
 @keyframes Diagonal {
@@ -294,35 +304,50 @@ a:visited{
 }
 
 .box2{
-    text-align: center;
-    padding: 6em;
-
     background-image: repeating-linear-gradient(
         -90deg,
         rgb(0, 56, 66),
-        rgb(3, 62, 117) 0%,
-        rgb(36, 36, 36)
+        rgb(3, 62, 117),
+        rgb(29, 29, 29)
+    );
+    background-size: 200%;
+    background-repeat: no-repeat;
+    animation: Diagonal alternate 8s infinite;
+    animation-delay: 2s;
+}
+
+.box3{
+    background-image: repeating-linear-gradient(
+        -90deg,
+        rgb(0, 56, 66),
+        rgb(3, 90, 117),
+        rgb(17, 17, 17)
+    );
+    background-size: 200%;
+    background-repeat: no-repeat;
+    
+    animation: Diagonal alternate 10s infinite;
+    animation-delay: 3s;
+}
+
+.box4{
+    background-image: repeating-linear-gradient(
+        -90deg,
+        rgb(0, 56, 66),
+        rgb(3, 117, 83),
+        rgb(17, 17, 17)
     );
     background-size: 200%;
     background-repeat: no-repeat;
     
     animation: Diagonal alternate 10s infinite;
     animation-delay: 4s;
-    font-style: oblique;
-    font-family: consolas;
-
 }
 
-.box3{
-    text-align: center;
-    padding: 6em;
-}
 
-.box4{
-    text-align: center;
-    padding: 6em;
-}
 
 #main-footer{
-    text-align: center;
+    text-align: right;
+    width: 90%;
+    margin: auto;
 }

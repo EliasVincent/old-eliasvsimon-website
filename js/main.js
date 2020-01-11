@@ -1,7 +1,8 @@
 console.log("js is working!")
 
 // sticky header currently not working for navbar but floating navbar might be a better choice anyway, I will just leave this here for future reference
-window.onscroll = function() {stickyheader()};
+
+/*window.onscroll = function() {stickyheader()};
 let header = document.getElementById("main-header");
 let sticky = header.offsetTop;
 
@@ -13,6 +14,7 @@ function stickyheader() {
     }
   } 
 
+*/
 
 // sticky navbar 
 window.onscroll = function() {stickynavbar()};
@@ -23,7 +25,7 @@ let sticky2 = navbar.offsetTop;
 
 function stickynavbar() {
     // if the page y axis is greater than stick (which is at offset Top)
-    if (window.pageYOffset > sticky) {
+    if (window.pageYOffset > sticky2) {
         // variable navbar which is got the ID navbar, adds the class sticky2 to itself, which triggers the CSS of sticky 2 being sticky at the top
         navbar.classList.add("sticky2");
       } else {
@@ -42,4 +44,6 @@ document.getElementById('switch-button').addEventListener('click', function () {
 // local storage for remembering if dark theme is enabled
 if (localStorage.getItem('dark-theme-enabled')) {
   document.body.classList.remove('light-theme');
-}
+} /* BROKEN ;_; else {
+  document.body.classList.add('light-theme');
+} */
