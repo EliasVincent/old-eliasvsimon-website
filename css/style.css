@@ -24,8 +24,6 @@ body{
     overflow: hidden;
 }
 
-
-
 #main-header{
     display: none;
     background-color: #333;
@@ -80,14 +78,21 @@ body{
 
     /* position: fixed;
     width: 100%; */
-    background-image:url(../images/navbar.png);
+    background: radial-gradient( #00001d, #000753);
+    /* background-image:url(../images/navbar.png); */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 200% 200%;
     color:white;
-    opacity: 85%;
+    opacity: 80%;
 
     transition: 0.3s ease-in-out;
+    animation-name: navbar-bg-animation;
+    animation: Diagonal alternate 5s infinite;
+}
 
+@keyframes navbar-bg-animation {
+    0% {background-position: 0% 50%}
+    100% {background-position: 100% 50%}
 }
 
 #navbar:hover {
@@ -169,21 +174,18 @@ a:hover{
 
 #showcase{
     background-image:url(../images/showcase.png);
+    
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 300px;
+    background-size: 200% 200%;
+    min-height: 250px;
     margin-bottom: 30px;
     text-align: right;
+
+
 }
 
-#showcase h1{
-    padding-top: 50px;
-    color: rgb(108, 92, 255);
-    opacity: 0.7;
-    padding-top: 200px;
-    font-style: inherit;
-}
+
 
 #downloads-showcase{
     background-image:url(../images/downloads-showcase.png);
@@ -203,7 +205,7 @@ a:hover{
 }
 
 #main p{
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
     border-radius: 15px;
 
@@ -269,6 +271,7 @@ a:hover{
     width: 80%;
     margin: auto;
     overflow: hidden;
+    
 }
 
 
@@ -288,6 +291,9 @@ a:hover{
     padding: 6em;
     font-style: oblique;
     font-family: consolas;
+    border-radius: 2%;
+    box-shadow: 0 10px 10px rgba(0, 9, 47, 0.8);
+    font-size: 24px;
 }
 
 .box1{
@@ -300,6 +306,7 @@ a:hover{
     background-size: 200%;
     background-repeat: no-repeat;
     animation: Diagonal alternate 10s infinite;
+    
 }
 
 @keyframes Diagonal {
@@ -356,6 +363,7 @@ a:visited{
     
     animation: Diagonal alternate 10s infinite;
     animation-delay: 4s;
+    border-radius: 0%;
 }
 
 

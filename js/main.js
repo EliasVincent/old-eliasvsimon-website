@@ -24,7 +24,7 @@ let sticky2 = navbar.offsetTop;
 
 
 function stickynavbar() {
-    // if the page y axis is greater than stick (which is at offset Top)
+    // if the page y axis is greater than sticky2 (which is at offset Top)
     if (window.pageYOffset > sticky2) {
         // variable navbar which is got the ID navbar, adds the class sticky2 to itself, which triggers the CSS of sticky 2 being sticky at the top
         navbar.classList.add("sticky2");
