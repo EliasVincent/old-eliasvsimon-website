@@ -1,27 +1,10 @@
-console.log("js is working!")
-
-// sticky header currently not working for navbar but floating navbar might be a better choice anyway, I will just leave this here for future reference
-
-/*window.onscroll = function() {stickyheader()};
-let header = document.getElementById("main-header");
-let sticky = header.offsetTop;
-
-function stickyheader() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }
-  } 
-
-*/
+console.log("js is working!");
 
 // sticky navbar 
 window.onscroll = function() {stickynavbar()};
 
 let navbar = document.getElementById("navbar");
 let sticky2 = navbar.offsetTop;
-
 
 function stickynavbar() {
     // if the page y axis is greater than sticky2 (which is at offset Top)
