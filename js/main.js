@@ -27,6 +27,6 @@ document.getElementById('switch-button').addEventListener('click', function () {
 // local storage for remembering if dark theme is enabled
 if (localStorage.getItem('dark-theme-enabled')) {
   document.body.classList.remove('light-theme');
-} /* BROKEN ;_; else {
+} /* Broken 😔 else {
   document.body.classList.add('light-theme');
 } */
