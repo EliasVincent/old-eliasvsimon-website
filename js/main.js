@@ -20,7 +20,7 @@ function stickynavbar() {
 // dark theme switcher everything in one!!! and I now kinda get how it works
 document.getElementById('switch-button').addEventListener('click', function () {
   let darkThemeEnabled = document.body.classList.toggle('light-theme');
-  localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
+  // localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
 });
 
 
@@ -28,5 +28,5 @@ document.getElementById('switch-button').addEventListener('click', function () {
 if (localStorage.getItem('dark-theme-enabled')) {
   document.body.classList.remove('light-theme');
 } /* Broken 😔 else {
-  document.body.classList.add('light-theme');
-} */
+//   document.body.classList.add('light-theme');
+// } */
