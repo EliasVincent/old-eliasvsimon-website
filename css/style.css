@@ -314,8 +314,8 @@ a:hover{
 }
 
 a:link{
-    text-decoration: none;
-    color:white;
+    text-decoration: underline;
+    color:rgb(224, 224, 224);
 }
 
 a:visited{
